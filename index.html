@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBN Australia DevOps Solutions</title>
+    <style>
+        :root {
+            --primary: #0052CC;
+            --secondary: #172B4D;
+            --accent: #FF5630;
+            --light: #F4F5F7;
+            --dark: #091E42;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            color: var(--secondary);
+        }
+        
+        .logo {
+            max-height: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: -3rem auto 2rem;
+            position: relative;
+            max-width: 900px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-item {
+            background-color: var(--light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+        
+        .team-section {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Replace with actual NBN logo if available -->
+            <div class="logo">NBN AUSTRALIA</div>
+            <h1>DevOps & Cloud Infrastructure Solutions</h1>
+            <p>Delivering secure, scalable, and automated solutions on Microsoft Azure</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="intro">
+            <h2>About Our Engagement with NBN Australia</h2>
+            <p>We are proud to partner with NBN Australia to implement cutting-edge DevOps practices and cloud infrastructure solutions. Our team specializes in CI/CD pipeline implementation, infrastructure automation, and configuration management, all hosted on the robust Microsoft Azure platform.</p>
+            
+            <p>Our solutions ensure <span class="highlight">faster deployments</span>, <span class="highlight">improved security</span>, and <span class="highlight">greater operational efficiency</span> for NBN Australia's critical systems.</p>
+        </section>
+        
+        <section>
+            <h2>Our DevOps Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Terraform</span>
+                        <span class="tech-item">Azure Resource Manager</span>
+                    </div>
+                    <p>Automated provisioning of cloud infrastructure using Terraform to ensure consistency and repeatability across environments.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Configuration Management</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Ansible</span>
+                        <span class="tech-item">Python</span>
+                    </div>
+                    <p>Centralized management of system configurations and application deployments across all environments.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>CI/CD Pipelines</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Azure DevOps</span>
+                        <span class="tech-item">Jenkins</span>
+                        <span class="tech-item">Maven</span>
+                    </div>
+                    <p>End-to-end automation of build, test, and deployment processes with integrated quality gates.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Containerization & Orchestration</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">Azure Kubernetes</span>
+                        <span class="tech-item">HELM</span>
+                    </div>
+                    <p>Modern application deployment using containers managed by Kubernetes for scalability and resilience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Security Scanning</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Trivy/OWASP</span>
+                        <span class="tech-item">SonarQube</span>
+                    </div>
+                    <p>Integrated security scanning throughout the development lifecycle to identify and remediate vulnerabilities early.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Monitoring & Observability</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Datadog</span>
+                        <span class="tech-item">Prometheus</span>
+                        <span class="tech-item">Grafana</span>
+                    </div>
+                    <p>Comprehensive monitoring solutions providing real-time insights into application performance and infrastructure health.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Azure DevOps Implementation</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Azure Boards</span>
+                <span class="tech-item">Azure Repos</span>
+                <span class="tech-item">Azure Pipeline</span>
+                <span class="tech-item">Azure Artifacts</span>
+                <span class="tech-item">Marketplace</span>
+            </div>
+            <p>We leverage the full power of Azure DevOps to provide an integrated experience for planning, developing, testing, and delivering high-quality software:</p>
+            
+            <ul>
+                <li><strong>Azure Boards:</strong> Agile planning with Scrum and Kanban boards, sprint planning tools, and backlog management</li>
+                <li><strong>Azure Repos:</strong> Secure, private Git repositories for source control</li>
+                <li><strong>Azure Pipelines:</strong> CI/CD pipelines supporting any language, platform, and cloud</li>
+                <li><strong>Azure Artifacts:</strong> Package management with support for Maven, npm, NuGet, and more</li>
+            </ul>
+        </section>
+        
+        <section class="team-section">
+            <h2>Our Dedicated Teams</h2>
+            
+            <h3>Primary Team - Team Achievers</h3>
+            <p>Working on daily tasks and implementation during sessions (7-8)</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar">S</div>
+                    <h4>Sadaf</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">M</div>
+                    <h4>Mohit</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">S</div>
+                    <h4>Shalini</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">U</div>
+                    <h4>Uday</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">M</div>
+                    <h4>Moulahusain</h4>
+                </div>
+            </div>
+            
+            <h3>Secondary Team - Release Rebels</h3>
+            <p>Shadow team working offline to support the primary initiatives</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar">D</div>
+                    <h4>Deepa</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">M</div>
+                    <h4>Meera</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">L</div>
+                    <h4>Lakshman</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">G</div>
+                    <h4>Govardhan</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">I</div>
+                    <h4>Ibrahim</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">V</div>
+                    <h4>Vinayak</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">V</div>
+                    <h4>Vishal</h4>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">A</div>
+                    <h4>Abid</h4>
+                </div>
+            </div>
+            
+            <h3>Project Coordination</h3>
+            <p>Minutes of Meeting agenda managed by Vardhan and Me, tracking daily progress and concepts explored.</p>
+        </section>
+        
+        <section>
+            <h2>Technology Stack Highlights</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Build & Deploy</h3>
+                    <ul>
+                        <li>Azure Resource Groups</li>
+                        <li>Virtual Machines & Instances</li>
+                        <li>Jenkins Automation</li>
+                        <li>Maven Build System</li>
+                        <li>Tomcat Application Server</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Security & Quality</h3>
+                    <ul>
+                        <li>Trivy/OWASP Vulnerability Scanning</li>
+                        <li>SonarQube Static Analysis (SAST)</li>
+                        <li>JFrog/Nexus Artifact Management</li>
+                        <li>Azure Container Registry</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Kubernetes Ecosystem</h3>
+                    <ul>
+                        <li>KIND/K3D for Local Development</li>
+                        <li>Azure Kubernetes Service (AKS)</li>
+                        <li>HELM Charts for Deployment</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Innovation Tools</h3>
+                    <ul>
+                        <li>Python Automation Scripts</li>
+                        <li>LLM Integration (ChatGPT, Deepseek, Grok)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 DevOps Solutions for NBN Australia</p>
+            <p>All services implemented on Microsoft Azure Cloud Platform</p>
+        </div>
+    </footer>
+</body>
+</html>
